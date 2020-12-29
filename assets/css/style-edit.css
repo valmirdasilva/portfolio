@@ -1,0 +1,16 @@
+.img-limit{
+    width: 40%;
+    height: auto;
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .img-limit {
+        width: 18%;
+        height: auto;
+        margin: 8px;
+    }
+}
