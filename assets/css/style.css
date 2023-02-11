@@ -158,6 +158,7 @@ a {
 }
 .stylenone li{
     list-style-type: none;
+    margin: 10px;
 }
 .stylenone ul{
     padding: 0;
