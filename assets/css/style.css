@@ -85,7 +85,7 @@ a {
 
 .box-compremude img {
     position: relative;
-    top: 130px;
+    top: 114px;
     width: 100%;
 }
 
@@ -205,6 +205,12 @@ a {
     .h1mob{
         font-size: 1.5rem;
     }
+    .box-compremude{
+        padding: 45px 10px !important;
+    }
+    .pad10mob{
+        padding-bottom: 10rem;
+    }
     /* For mobile phones: */
     .oculta-mob {
         display: none !important;
@@ -261,7 +267,8 @@ a {
      .position-text {
     position: absolute;
     top: 35px;
-    left: 75px;
+    left: 0%;
+    right: 0%;
 }
 .position-text h1{
     font-size: 12px;
@@ -270,5 +277,12 @@ a {
 .position-text p{
     font-size: 8px;
     text-align: center;
+}
+.contato-font h1{
+    font-size: 28px !important;
+    padding-top: 50px;
+}
+.contato-font p{   
+    font-size: 20px !important;
 }
 }
