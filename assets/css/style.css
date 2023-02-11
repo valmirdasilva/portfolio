@@ -1,0 +1,274 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #fff;
+}
+
+a {
+    color: #fff !important;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+  }
+.no-row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.dropdown-menu a {
+    color: #000 !important;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+
+.position-text {
+    position: absolute;
+    top: 12rem;
+    left: 14rem;
+    color: #fff;
+}
+
+.btn-1section {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.box-empreendimentos {
+    background-color: #1772b9;
+    color: white;
+}
+
+.box-empreendimentos p {
+    font-size: 12px;
+}
+
+.box-empreendimentos h1 {
+    font-size: 18px;
+
+}
+
+.box-empreendimentos img {
+    object-fit: contain;
+}
+
+.box-rodape {
+    margin: 14px;
+}
+
+.box-rodape img {
+    width: 10px;
+    position: relative;
+    bottom: 10px;
+    margin: 10px;
+}
+
+.box-compremude {
+    background-color: #fff;
+    padding: 60px;
+}
+
+.box-compremude h1 {
+    font-weight: 700 !important;
+    color: #17588e !important;
+}
+
+.box-compremude img {
+    position: relative;
+    top: 130px;
+    width: 100%;
+}
+
+.pt-5compremude {
+    padding-top: 8rem;
+}
+
+.depoimentos-text {
+    color: #fff;
+    text-align: center;
+}
+
+.depoimentos-text h1 {
+    font-size: 20px;
+    font-weight: 300;
+    white-space: 10px;
+    padding-top: 70px;
+}
+
+.btn-primary1 {
+    background-color: #1772b9 !important;
+    color: #fff !important;
+    margin: 10px !important;
+    padding: 10px 20px !important;
+}
+
+.btn-primary2 {
+    background-color: #fff !important;
+    color: #1772b9 !important;
+    margin: 10px !important;
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+    font-weight: 800 !important;
+}
+
+.color-icons i {
+    color: #1772b9 !important;
+    font-size: 26px !important;
+    margin: 10px;
+}
+
+.font-apsuite {
+    margin: 10px 30px;
+}
+
+.font-apsuite img {
+    object-fit: contain;
+    width: 100px !important;
+}
+
+.font-apsuite h1 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.font-apsuite p {
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+.gallery{
+    margin: 10px 50px;
+}
+.gallery img {
+    width: 230px;
+    padding: 5px;
+    transition: 1s;
+}
+.gallery img:hover{
+    transform: scale(1.1);
+}
+.stylenone li{
+    list-style-type: none;
+}
+.stylenone ul{
+    padding: 0;
+    margin-left: 40px;
+ }
+ .stylenone h2{
+    margin-left: 40px;
+ }
+
+ /* FADE */
+ .fade-in-image {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+/* FADE */
+@media only screen and (max-width: 768px) {
+    .h1mob{
+        font-size: 1.5rem;
+    }
+    /* For mobile phones: */
+    .oculta-mob {
+        display: none !important;
+    }
+
+    .box-compremude img {
+        position: relative;
+        top: 100px;
+        left: 0px;
+        width: 100%;
+    }
+
+    .fixed-top {
+        background-color: #1772b9;
+        padding: 10px 30px;
+    }
+
+    .carousel {
+        position: relative;
+        top: 60px !important;
+        margin-bottom: 100px;
+    }
+
+    .logo-navmob {
+        width: 80px;
+    }
+
+    .empreendimento-txt {
+        font-size: 1.5rem;
+    }
+
+    .lbox:target .box_img img {
+        opacity: 1;
+        transition: opacity .4s linear;
+        top: 300px;
+        position: relative;
+    }
+    .iframeyout {
+        width: 80% !important;
+    }
+    .centermob {
+        text-align: center !important;
+    }
+    .stylenone li{
+       padding: 0;
+    }
+    .stylenone ul{
+        padding: 0;
+        margin-left: 0px;
+     }
+     .stylenone h2{
+        margin-left: 0px;
+     }
+     .position-text {
+    position: absolute;
+    top: 35px;
+    left: 75px;
+}
+.position-text h1{
+    font-size: 12px;
+    text-align: center;
+}
+.position-text p{
+    font-size: 8px;
+    text-align: center;
+}
+}
