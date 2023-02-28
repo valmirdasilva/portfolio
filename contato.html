@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compre e mude | INICIO</title>
+    <title>Compre e mude | Contato</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -54,9 +55,9 @@
             }
             </script>
 </head>
-<nav id="navbar" class="navbar navbar-expand-sm fixed-top navbar-light">
-    <div class="container">
-        <a href="index.html"> <img class="logo-navmob" src="assets/img/logo.png" width="120px" alt=""></a>
+<nav  id="navbar" class="navbar navbar-expand-sm fixed-top navbar-light">
+    <div class="container" >
+      <a href="index.html"> <img class="logo-navmob" src="assets/img/logo.png" width="120px" alt=""></a> 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -66,22 +67,34 @@
                     <a class="nav-link" href="index.html">INICIO</a>
                 </li>
             </ul>
+            
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
+                    
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         IMÓVEIS
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="mac.html">Mac</a>
-                        <a class="dropdown-item" href="EdenCyrella.html">Eden Cyrella</a>
-                        <a class="dropdown-item" href="livingfreguesia.html">Living Freguesia do Ó</a>
-                        <a class="dropdown-item" href="livingone.html">Living One</a>
-                        <a class="dropdown-item" href="mitre.html">Mitre</a>
+                        <a class="dropdown-item" href="mac.html">Mac
+                            <span> - Bairro: Brooklin, SP</span>
+                        </a>
+                        <a class="dropdown-item" href="EdenCyrella.html">Eden Cyrella
+                            <span> - Bairro: Brooklin, SP</span>
+                        </a>
+                        <a class="dropdown-item" href="livingfreguesia.html">Living Freguesia do Ó
+                            <span> - Bairro: Vila Albertina, SP</span>
+                        </a>
+                        <a class="dropdown-item" href="livingone.html">Living One
+                            <span> - Bairro: Barra Funda, SP</span>
+                        </a>
+                        <a class="dropdown-item" href="mitre.html">Mitre
+                            <span> - Bairro: Vila Prudente, SP</span>
+                        </a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#sobre">SOBRE</a>
+                    <a class="nav-link" href="#sobre">SOBRE</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contato.html">CONTATO</a>
@@ -91,8 +104,10 @@
         </div>
     </div>
 </nav>
-
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=5511947281506&text=Estou%20com%20d%C3%BAvida,%20vim%20do%20site%20da%20Compre%20e%20Mude" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
 <body>
     <div id="carouselExampleIndicators" class="carousel slide fade-in-image" data-ride="carousel">
 
@@ -126,7 +141,7 @@
 
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+            <form id="contact-form" name="contact-form" action="mailer/send.php" method="POST">
 
                 <!--Grid row-->
                 <div class="row">
@@ -134,7 +149,7 @@
                     <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
+                            <input type="text" id="name" name="nome" class="form-control">
                             <label for="name" class="">Nome*</label>
                         </div>
                     </div>
@@ -143,7 +158,7 @@
                     <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input type="tel" id="email" name="email" class="form-control">
+                            <input type="tel" id="email" name="numero" class="form-control">
                             <label for="email" class="">Número*</label>
                         </div>
                     </div>
@@ -156,7 +171,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
-                            <input type="email" id="subject" name="subject" class="form-control">
+                            <input type="email" id="subject" name="email" class="form-control">
                             <label for="subject" class="">email</label>
                         </div>
                     </div>
@@ -170,7 +185,7 @@
                     <div class="col-md-12">
 
                         <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <textarea type="text" id="message" name="mensagem" rows="2" class="form-control md-textarea"></textarea>
                             <label for="message">Sua mensagem</label>
                         </div>
 

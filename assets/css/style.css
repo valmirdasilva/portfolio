@@ -104,11 +104,14 @@ a {
     white-space: 10px;
     padding-top: 70px;
 }
-
+.edit-pad{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
 .btn-primary1 {
     background-color: #1772b9 !important;
     color: #fff !important;
-    margin: 10px !important;
+    margin: 10px 0px !important;
     padding: 10px 20px !important;
 }
 
@@ -167,7 +170,43 @@ a {
  .stylenone h2{
     margin-left: 40px;
  }
+ .data-entrega h1{
+    font-size: 70px;
+ }
+ .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
 
+.my-float{
+	margin-top:16px;
+}
+ .pulsate {
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+
+}
+@-webkit-keyframes pulsate {
+    0% { 
+        scale: 0.8;
+    }
+    50% { 
+        scale: 1.0;
+    }
+    100% { 
+        scale: 0.8;
+    }
+}
  /* FADE */
  .fade-in-image {
     animation: fadeIn 5s;
@@ -203,6 +242,12 @@ a {
   }
 /* FADE */
 @media only screen and (max-width: 768px) {
+    a {
+        color: #000000 !important;
+    }
+    .data-entrega h1{
+        font-size: 24px;
+     }
     .h1mob{
         font-size: 1.5rem;
     }
@@ -225,7 +270,7 @@ a {
     }
 
     .fixed-top {
-        background-color: #1772b9;
+        background-color: #ffffff;
         padding: 10px 30px;
     }
 
