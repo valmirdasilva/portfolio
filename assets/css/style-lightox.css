@@ -2,7 +2,7 @@
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1000 !important;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -19,7 +19,7 @@
     margin: auto;
     padding: 0;
     width: 90%;
-    max-width: 1200px;
+    max-width: 54%;
   }
   
   /* The Close Button */
@@ -85,6 +85,7 @@
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    background: #111;
   }
   
   img {

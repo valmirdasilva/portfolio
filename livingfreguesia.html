@@ -8,7 +8,7 @@
     <title>Compre e mude | Living Freguesia</title>
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="assets/css/style-lightox.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"
         integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -63,6 +63,44 @@
                 document.getElementById("navbar").style.top = "-200px";
             }
             prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+    
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    
+        var slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
         }
     </script>
 </head>
@@ -214,17 +252,74 @@
     </section>
     <section style="background-color: #efefec;" class="pt-5 pb-5 fade-in-image">
         <div class="d-flex justify-content-center centermob">
-            <h1>Plantas</h1>
+            <h1>Confira  as plantas do projeto</h1>
         </div>
-        <div class="row no-row d-flex justify-content-center text-center">
-            <div class="col-md-3">
-                <img width="300px" src="assets/img/living-grand/plantas/1.png" alt="">
+        <div class="d-flex justify-content-center pulsate ">
+            <div class="btn btn-primary1 mt-3" onclick="openModal();currentSlide(1)">
+              <h4>Clique aqui</h4>  
             </div>
-            <div class="col-md-3">
-                <img width="300px" src="assets/img/living-grand/plantas/2.png" alt="">
+
+        </div>
+        <div class="text-center">
+            <div class="m-4">
+                <img width="50px" src="assets/img/icons/tamanhocasa-cyrella.png" alt="">
+                <span style="font-size: 24px;"><b>71 e 119m²</b></span>
             </div>
-            <div class="col-md-3">
-                <img width="300px" src="assets/img/living-grand/plantas/3.png" alt="">
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 10</div>
+                    <img src="assets/img/living-grand/plantas/1.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 10</div>
+                    <img src="assets/img/living-grand/plantas/2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 10</div>
+                    <img src="assets/img/living-grand/plantas/3.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 10</div>
+                    <img src="assets/img/living-grand/plantas/4.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 10</div>
+                    <img src="assets/img/living-grand/plantas/5.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">6 / 10</div>
+                    <img src="assets/img/living-grand/plantas/6.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 10</div>
+                    <img src="assets/img/living-grand/plantas/7.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 10</div>
+                    <img src="assets/img/living-grand/plantas/8.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">9 / 10</div>
+                    <img src="assets/img/living-grand/plantas/9.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">10 / 10</div>
+                    <img src="assets/img/living-grand/plantas/10.jpeg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
             </div>
         </div>
 
