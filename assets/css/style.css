@@ -19,7 +19,9 @@ a {
     margin-right: 0px !important;
     margin-left: 0px !important;
 }
-
+.dropdown-menu {
+    font-size: 0.8rem !important;
+}
 .dropdown-menu a {
     color: #000 !important;
 }
