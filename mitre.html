@@ -53,60 +53,60 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <script>
-            var prevScrollpos = window.pageYOffset;
-            window.onscroll = function() {
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
             var currentScrollPos = window.pageYOffset;
-              if (prevScrollpos > currentScrollPos) {
+            if (prevScrollpos > currentScrollPos) {
                 document.getElementById("navbar").style.top = "0";
-              } else {
+            } else {
                 document.getElementById("navbar").style.top = "-200px";
-              }
-              prevScrollpos = currentScrollPos;
             }
-            </script>
-                            <script>
-                                function openModal() {
-                                    document.getElementById("myModal").style.display = "block";
-                                }
-                            
-                                function closeModal() {
-                                    document.getElementById("myModal").style.display = "none";
-                                }
-                            
-                                var slideIndex = 1;
-                                showSlides(slideIndex);
-                            
-                                function plusSlides(n) {
-                                    showSlides(slideIndex += n);
-                                }
-                            
-                                function currentSlide(n) {
-                                    showSlides(slideIndex = n);
-                                }
-                            
-                                function showSlides(n) {
-                                    var i;
-                                    var slides = document.getElementsByClassName("mySlides");
-                                    var dots = document.getElementsByClassName("demo");
-                                    var captionText = document.getElementById("caption");
-                                    if (n > slides.length) { slideIndex = 1 }
-                                    if (n < 1) { slideIndex = slides.length }
-                                    for (i = 0; i < slides.length; i++) {
-                                        slides[i].style.display = "none";
-                                    }
-                                    for (i = 0; i < dots.length; i++) {
-                                        dots[i].className = dots[i].className.replace(" active", "");
-                                    }
-                                    slides[slideIndex - 1].style.display = "block";
-                                    dots[slideIndex - 1].className += " active";
-                                    captionText.innerHTML = dots[slideIndex - 1].alt;
-                                }
-                            </script>
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
 </head>
-<nav  id="navbar" class="navbar navbar-expand-sm fixed-top navbar-light">
-    <div class="container" >
-      <a href="index.html"> <img class="logo-navmob" src="assets/img/logo.png" width="120px" alt=""></a> 
+<nav id="navbar" class="navbar navbar-expand-sm fixed-top navbar-light">
+    <div class="container">
+        <a href="index.html"> <img class="logo-navmob" src="assets/img/logo.png" width="120px" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -116,10 +116,10 @@
                     <a class="nav-link" href="index.html">Início</a>
                 </li>
             </ul>
-            
+
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    
+
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         Imóveis
@@ -154,9 +154,11 @@
     </div>
 </nav>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://api.whatsapp.com/send?phone=5511947281506&text=Estou%20com%20d%C3%BAvida,%20vim%20do%20site%20da%20Compre%20e%20Mude" class="float" target="_blank">
-<i class="fa fa-whatsapp my-float"></i>
+<a href="https://api.whatsapp.com/send?phone=5511947281506&text=Estou%20com%20d%C3%BAvida,%20vim%20do%20site%20da%20Compre%20e%20Mude"
+    class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
 </a>
+
 <body>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -169,11 +171,11 @@
                 <img src="assets/img/mitre/banner1.jpg" class="d-block w-100" alt="...">
                 <div class="position-text row no-row">
                     <div class="col-md-12">
-                        <h1>Vem aí mais um <br>
-                            produto da Linha <br>
-                            Origem. </h1>
-                        <p>Agora na Mooca!</p>
-                        <a href="https://api.whatsapp.com/send?phone=5511947281506&text=Estou%20com%20d%C3%BAvida,%20vim%20do%20site%20da%20Compre%20e%20Mude" target="_blank"><button type="button" class="oculta-mob btn btn-primary btn-1section oculta-mob">Ver mais</button></a>
+                        <h1>RAÍZES RESERVE </h1>
+                        <p>Tenha uma Experiência 360º</p>
+                        <a href="https://api.whatsapp.com/send?phone=5511947281506&text=Estou%20com%20d%C3%BAvida,%20vim%20do%20site%20da%20Compre%20e%20Mude"
+                            target="_blank"><button type="button"
+                                class="oculta-mob btn btn-primary btn-1section oculta-mob">Ver mais</button></a>
                     </div>
 
 
@@ -206,54 +208,55 @@
                 <img width="100%" src="assets/img/mitre/img-1section.jpg" alt="">
             </div>
             <div class="col-md-7">
-                <h1 style="#444444">Projeto pensado <br>
-                    em cada <br>
-                    detalhe.</h1>
+                <h1 style="#444444">Viver com exclusividade no coração da cidade.</h1>
 
 
 
-                <p>A Linha Origem chega na Vila Guilhermina com um projeto de apartamentos residenciais diferenciados e exclusivos, desenhados para trazer o legitimo alto padrão de volta ao nosso DNA.  Plantas de até 3 dormitórios.<br> No conjunto de renomados profissionais, nasce uma composição artesanal, elaborada com paisagismo nativo, amplos espaços e toda modernidade para sua arte de viver cada momento. Este Breve lançamento esta localizado na Vila Guilhermina e com facilidade e rapidez para viver o melhor que o bairro oferece.
+                <p>Um empreendimento Mitre com 4 torres, sendo Apartamentos e Studios com lazer completo e acessos
+                    independentes.<br>
+                    Apartamentos residenciais de 119m², 85m² e 67m². Studios a partir de 24m².
+                    A 9 minutos a pé do metrô Vila Prudente.
                 </p>
                 <div style="    display: flex;
                 font-size: 12px;">
                     <div class="m-2 text-right">
-                        <a href="https://goo.gl/maps/tfybqHYgPsvjNvLA8" target="_blank" class="text-dark">
-                        <img width="22px" src="assets/img/icons/maps-cyrella.png" alt="">
-                        <span><b>Localização <br> CLIQUE AQUI</b></span>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=-23.5786932,-46.5848271" target="_blank" class="text-dark">
+                            <img width="22px" src="assets/img/icons/maps-cyrella.png" alt="">
+                            <span><b>Localização <br> CLIQUE AQUI</b></span>
                         </a>
                     </div>
                     <div class="m-2">
                         <img width="25px" src="assets/img/icons/tamanhocasa-cyrella.png" alt="">
-                        <span><b>69, 53 e 40m²</b></span>
+                        <span><b>119m², 85m² e 67m². Studios a partir de 24m²</b></span>
                     </div>
                     <div class="m-2">
 
                         <img width="25px" src="assets/img/icons/rocket-cyrella.png" alt="">
-                        <span><b>Breve 
-                            Lançamento</b></span>
+                        <span><b>Breve
+                                Lançamento</b></span>
                     </div>
                 </div>
                 <div class="centermob">
                     <a href="contato.html">
-                    <button type="button" class="btn btn-primary1">Entrar em contato</button></a>
+                        <button type="button" class="btn btn-primary1">Entrar em contato</button></a>
                 </div>
             </div>
         </div>
     </section>
     <section style="background-color: #efefec;" class="pt-5 pb-5 fade-in-image">
         <div class="d-flex justify-content-center centermob">
-            <h1>Confira  as plantas do projeto</h1>
+            <h1>Confira as plantas do projeto</h1>
         </div>
         <div class="d-flex justify-content-center pulsate ">
             <div class="btn btn-primary1 mt-3" onclick="openModal();currentSlide(1)">
-              <h4>Clique aqui</h4>  
+                <h4>Clique aqui</h4>
             </div>
 
         </div>
         <div class="text-center">
             <div class="m-4">
                 <img width="50px" src="assets/img/icons/tamanhocasa-cyrella.png" alt="">
-                <span style="font-size: 24px;"><b>69, 53 e 40m²</b></span>
+                <span style="font-size: 24px;"><b>119m², 85m² e 67m². Studios a partir de 24m²</b></span>
             </div>
         </div>
         <div id="myModal" class="modal">
@@ -261,27 +264,43 @@
             <div class="modal-content">
 
                 <div class="mySlides">
-                    <div class="numbertext">1 / 5</div>
+                    <div class="numbertext">1 / 9</div>
                     <img src="assets/img/mitre/plantas/1.png" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">2 / 5</div>
+                    <div class="numbertext">2 / 9</div>
                     <img src="assets/img/mitre/plantas/2.png" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">3 / 5</div>
+                    <div class="numbertext">3 / 9</div>
                     <img src="assets/img/mitre/plantas/3.png" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">4 / 5</div>
+                    <div class="numbertext">4 / 9</div>
                     <img src="assets/img/mitre/plantas/4.png" style="width:100%">
                 </div>
                 <div class="mySlides">
-                    <div class="numbertext">4 / 5</div>
+                    <div class="numbertext">5 / 9</div>
                     <img src="assets/img/mitre/plantas/5.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">6 / 9</div>
+                    <img src="assets/img/mitre/plantas/6.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 9</div>
+                    <img src="assets/img/mitre/plantas/7.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 9</div>
+                    <img src="assets/img/mitre/plantas/8.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">9 / 9</div>
+                    <img src="assets/img/mitre/plantas/9.png" style="width:100%">
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -316,7 +335,7 @@
     <section style=" background-image: url(assets/img/bannerdata-entrega.png);" class="pt-5 pb-5">
         <div class="container pt-4 pb-4 fade-in-image">
             <div class="d-flex justify-content-center text-light data-entrega">
-                <h1 class="pulsate"><b>Data de entrega: 31/05/2026</b></h1>
+                <h1 class="pulsate"><b>Data de entrega: 02/2026</b></h1>
             </div>
         </div>
     </section>
@@ -344,30 +363,30 @@
 
         <div class="gallery row no-row d-flex justify-content-center">
             <div class="col-md-8 text-center">
-                <a href="assets/img/mitre/" data-lightbox="mygallery"><img
-                        src="assets/img/mitre/galeria/1.png" alt=""></a>
+                <a href="assets/img/mitre/galeria/1.webp" data-lightbox="mygallery"><img
+                    src="assets/img/mitre/galeria/1.webp" alt=""></a>
 
-                <a href="assets/img/mitre/galeria/2.png" data-lightbox="mygallery"><img
-                        src="assets/img/mitre/galeria/2.png" alt=""></a>
+                <a href="assets/img/mitre/galeria/2.webp" data-lightbox="mygallery"><img
+                        src="assets/img/mitre/galeria/2.webp" alt=""></a>
 
-                <a href="assets/img/mitre/galeria/3.png" data-lightbox="mygallery"><img
-                        src="assets/img/mitre/galeria/3.png" alt=""></a>
+                <a href="assets/img/mitre/galeria/3.webp" data-lightbox="mygallery"><img
+                        src="assets/img/mitre/galeria/3.webp" alt=""></a>
 
-                <a href="assets/img/mitre/galeria/4.png" data-lightbox="mygallery"><img
-                        src="assets/img/mitre/galeria/4.png" alt=""></a>
+                <a href="assets/img/mitre/galeria/4.webp" data-lightbox="mygallery"><img
+                        src="assets/img/mitre/galeria/4.webp" alt=""></a>
 
-                <a href="assets/img/mitre/galeria/5.png" data-lightbox="mygallery"><img
-                        src="assets/img/mitre/galeria/5.png" alt=""></a>
+                <a href="assets/img/mitre/galeria/5.webp" data-lightbox="mygallery"><img
+                        src="assets/img/mitre/galeria/5.webp" alt=""></a>
 
-                <a href="assets/img/mitre/galeria/6.png" data-lightbox="mygallery"><img
-                        src="assets/img/mitre/galeria/6.png" alt=""></a>
+                <a href="assets/img/mitre/galeria/6.webp" data-lightbox="mygallery"><img
+                        src="assets/img/mitre/galeria/6.webp" alt=""></a>
             </div>
 
         </div>
 
         <div class="centermob d-flex justify-content-center pb-5">
             <a href="contato.html">
-            <button type="button" class="btn btn-primary1">Ver mais</button></a>
+                <button type="button" class="btn btn-primary1">Ver mais</button></a>
         </div>
     </section>
 
@@ -381,7 +400,7 @@
                 <p>Informe seus dados de contato e agende uma<br> visita sem compromisso.</p>
                 <div>
                     <a href="contato.html">
-                    <button type="button" class="btn btn-primary2">Entrar em contato</button></a>
+                        <button type="button" class="btn btn-primary2">Entrar em contato</button></a>
                 </div>
             </div>
 
@@ -397,7 +416,7 @@
                     encontraremos o melhor negócio para você.</p>
                 <div>
                     <a href="contato.html">
-                    <button type="button" class="btn btn-primary1">Entrar em contato</button></a>
+                        <button type="button" class="btn btn-primary1">Entrar em contato</button></a>
                 </div>
             </div>
 
@@ -411,8 +430,9 @@
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-square-instagram"></i>
                     <i class="fa-brands fa-youtube"></i>
-                    <a href="https://api.whatsapp.com/send?phone=5511947281506"><i class="fa-brands fa-square-whatsapp"></i></a>
-                    
+                    <a href="https://api.whatsapp.com/send?phone=5511947281506"><i
+                            class="fa-brands fa-square-whatsapp"></i></a>
+
                 </div>
 
             </div>
@@ -422,7 +442,8 @@
                     <li><a href="index.html" style="color: black !important;"><span class="m-2">Início</span></a></li>
                     <li><a href="#imoveis" style="color: black !important;"><span class="m-2">Imóveis</span></a></li>
                     <li><a href="#sobre" style="color: black !important;"><span class="m-2">Sobre</span></a></li>
-                    <li><a href="contato.html" style="color: black !important;"><span class="m-2">Contato</span></a></li>
+                    <li><a href="contato.html" style="color: black !important;"><span class="m-2">Contato</span></a>
+                    </li>
                 </ul>
             </div>
             <div class="col-md-4 col-xs-12 oculta-mob">
@@ -434,7 +455,7 @@
                 <div class="mt-4 d-flex">
                     <img src="assets/img/icons/tel-footer.png" class="m-2" alt="">
                     <a href="https://api.whatsapp.com/send?phone=5511947281506">
-                    <span style="color: black;">(11) 94728-1506</span></a>
+                        <span style="color: black;">(11) 94728-1506</span></a>
                 </div>
                 <div class="mt-4 d-flex">
                     <img src="assets/img/icons/maps-footer.png" class="m-2" alt="">
