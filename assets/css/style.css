@@ -319,11 +319,15 @@ a {
     right: 0%;
 }
 .position-text h1{
-    font-size: 12px;
+    font-size: 24px;
     text-align: center;
 }
 .position-text p{
-    font-size: 8px;
+    font-size: 16px;
+    text-align: center;
+}
+.position-text h3{
+    font-size: 16px;
     text-align: center;
 }
 .contato-font h1{
