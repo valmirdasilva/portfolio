@@ -1,8 +1,9 @@
 <!--
-  Este arquivo vai no repositório especial  valmirdasilva/valmirdasilva
-  (o nome do repo tem que ser igual ao seu usuário). Junto sobem também
-  o banner.png e o banner.svg. Se o seu branch padrão for "master",
-  troque /main/ por /master/ nos links das imagens abaixo.
+  Este README vai no repositório de perfil  valmirdasilva/valmirdasilva
+  (o nome do repo TEM que ser igual ao seu usuário — é ele que aparece no topo do perfil).
+  O banner é servido do repo do portfólio (valmirdasilva/portfolio), onde o banner.png
+  e o banner.svg já estão. Se o branch padrão do portfólio for "master", troque /main/
+  por /master/ na linha da imagem.
 -->
 
 <img src="https://raw.githubusercontent.com/valmirdasilva/portfolio/main/banner.png" alt="VALMIR — desenvolvedor com IA no fluxo" width="100%" />
@@ -19,7 +20,7 @@ Construo e coloco no ar a presença digital de negócios — sites, e-commerce,
 integração de CRM e tráfego pago. A IA acelera; a arquitetura e a curadoria
 do código são minhas.
 
-**[Portfólio](https://SEU-LINK)** &nbsp;·&nbsp;
+**[Portfólio](https://valmirdasilva.github.io/portfolio/)** &nbsp;·&nbsp;
 [WhatsApp](https://wa.me/5551992017588) &nbsp;·&nbsp;
 [LinkedIn](https://www.linkedin.com/in/valmir-da-silva-da-silveira-80139428b/) &nbsp;·&nbsp;
 valmirdasilva1999@gmail.com
@@ -34,13 +35,11 @@ valmirdasilva1999@gmail.com
 | Projeto | Escopo |
 | --- | --- |
 | **[Dal Ri Negócios Imobiliários](https://dalrinegociosimobiliarios.com.br)** | Site novo · integração CRM Loft · tráfego pago |
-| **Buriti Garden Premium** | Site do lançamento + galeria de 40+ ambientes |
-| **Formato Contábil** | Reformulação completa do site |
-| **Daniela Dalberto** — Advocacia | Reformulação completa do site |
-| **Carolina Guaragna** — Psicologia | Reformulação completa do site |
-| **Cleo Ribeiro** — Psicologia | Reformulação completa do site |
-
-Apresentação de cada projeto no [portfólio](https://SEU-LINK).
+| **[Buriti Garden Premium](https://valmirdasilva.github.io/portfolio/case.html?p=buriti)** | Site do lançamento + galeria de 40+ ambientes |
+| **[Formato Contábil](https://valmirdasilva.github.io/portfolio/case.html?p=formato)** | Reformulação completa do site |
+| **[Daniela Dalberto](https://valmirdasilva.github.io/portfolio/case.html?p=daniela)** — Advocacia | Reformulação completa do site |
+| **[Carolina Guaragna](https://valmirdasilva.github.io/portfolio/case.html?p=carolina)** — Psicologia | Reformulação completa do site |
+| **[Cleo Ribeiro](https://valmirdasilva.github.io/portfolio/case.html?p=cleo)** — Psicologia | Reformulação completa do site |
 
 ### Stack
 
