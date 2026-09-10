@@ -1,47 +1,53 @@
 <!--
-  Este README vai no repositório de perfil  valmirdasilva/valmirdasilva
-  (o nome do repo TEM que ser igual ao seu usuário — é ele que aparece no topo do perfil).
-  O banner é servido do repo do portfólio (valmirdasilva/portfolio), onde o banner.png
-  e o banner.svg já estão. Se o branch padrão do portfólio for "master", troque /main/
-  por /master/ na linha da imagem.
+  README do perfil do GitHub — vai no repo  valmirdasilva/valmirdasilva
+  (o nome do repo precisa ser igual ao usuário). Markdown puro, sem imagem
+  externa, então nunca "quebra". No GitHub o bloco ```diff fica verde/vermelho.
 -->
 
-<img src="https://raw.githubusercontent.com/valmirdasilva/portfolio/main/banner.png" alt="VALMIR — desenvolvedor com IA no fluxo" width="100%" />
+```
+██    ██  █████  ██      ███    ███ ██ ██████
+██    ██ ██   ██ ██      ████  ████ ██ ██   ██
+██    ██ ███████ ██      ██ ████ ██ ██ ██████
+ ██  ██  ██   ██ ██      ██  ██  ██ ██ ██   ██
+  ████   ██   ██ ███████ ██      ██ ██ ██   ██
+```
 
-<br><br>
+```diff
+@@ operador solo // novo hamburgo · rs @@
++ desenvolvedor com IA no fluxo
++ sites · e-commerce · integração de CRM · tráfego pago
++ [ ONLINE ] disponível para projetos e vagas
+- um fornecedor separado pra cada frente
+```
 
-<img align="right" width="44%" alt="GitHub stats de valmirdasilva"
- src="https://github-readme-stats.vercel.app/api?username=valmirdasilva&show_icons=true&hide_border=true&count_private=true&bg_color=0B0E0A&title_color=A6C22E&icon_color=A6C22E&text_color=DAD7C6" />
+> Construo e coloco no ar a presença digital de negócios.
+> A IA acelera o trabalho pesado; a arquitetura e a curadoria do código são minhas.
 
-### Valmir da Silva
-
-Desenvolvedor com IA no fluxo, em Novo Hamburgo / RS.
-Construo e coloco no ar a presença digital de negócios — sites, e-commerce,
-integração de CRM e tráfego pago. A IA acelera; a arquitetura e a curadoria
-do código são minhas.
-
-**[Portfólio](https://valmirdasilva.github.io/portfolio/)** &nbsp;·&nbsp;
-[WhatsApp](https://wa.me/5551992017588) &nbsp;·&nbsp;
-[LinkedIn](https://www.linkedin.com/in/valmir-da-silva-da-silveira-80139428b/) &nbsp;·&nbsp;
-valmirdasilva1999@gmail.com
-
-<br clear="both">
-<br>
+### `▶` [ABRIR O PORTFÓLIO »](https://valmirdasilva.github.io/portfolio/)
 
 ---
 
-### No ar
+## `//` NO AR
 
-| Projeto | Escopo |
-| --- | --- |
-| **[Dal Ri Negócios Imobiliários](https://dalrinegociosimobiliarios.com.br)** | Site novo · integração CRM Loft · tráfego pago |
-| **[Buriti Garden Premium](https://valmirdasilva.github.io/portfolio/case.html?p=buriti)** | Site do lançamento + galeria de 40+ ambientes |
-| **[Formato Contábil](https://valmirdasilva.github.io/portfolio/case.html?p=formato)** | Reformulação completa do site |
-| **[Daniela Dalberto](https://valmirdasilva.github.io/portfolio/case.html?p=daniela)** — Advocacia | Reformulação completa do site |
-| **[Carolina Guaragna](https://valmirdasilva.github.io/portfolio/case.html?p=carolina)** — Psicologia | Reformulação completa do site |
-| **[Cleo Ribeiro](https://valmirdasilva.github.io/portfolio/case.html?p=cleo)** — Psicologia | Reformulação completa do site |
+| projeto | escopo |
+|---|---|
+| **[Dal Ri Negócios Imobiliários](https://dalrinegociosimobiliarios.com.br)** | site novo · CRM Loft · tráfego pago |
+| **[Buriti Garden Premium](https://valmirdasilva.github.io/portfolio/case.html?p=buriti)** | site do lançamento · galeria de 40+ ambientes |
+| **[Formato Contábil](https://valmirdasilva.github.io/portfolio/case.html?p=formato)** | reformulação completa do site |
+| **[Daniela Dalberto](https://valmirdasilva.github.io/portfolio/case.html?p=daniela)** | advocacia · reformulação completa |
+| **[Carolina Guaragna](https://valmirdasilva.github.io/portfolio/case.html?p=carolina)** | psicologia · reformulação completa |
+| **[Cleo Ribeiro](https://valmirdasilva.github.io/portfolio/case.html?p=cleo)** | psicologia · reformulação completa |
 
-### Stack
+## `//` STACK
 
-`HTML` · `CSS` · `JavaScript` · `WordPress` · e-commerce · APIs &amp; integração de CRM
-· Meta Ads · Google Ads · Photoshop · Canva
+```ini
+[dev]     html · css · javascript · wordpress · e-commerce
+[ia]      claude · deepseek · codex · antigravity · integração de APIs
+[infra]   github · deploy · APIs · integração de CRM
+[ads]     meta ads · google ads · pixel e conversões
+[design]  photoshop · canva · identidade visual
+```
+
+```
+> fim da transmissão
+```
