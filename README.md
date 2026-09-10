@@ -5,7 +5,7 @@
   troque /main/ por /master/ nos links das imagens abaixo.
 -->
 
-<img src="https://raw.githubusercontent.com/valmirdasilva/valmirdasilva/main/banner.png" alt="VALMIR — desenvolvedor com IA no fluxo" width="100%" />
+<img src="https://raw.githubusercontent.com/valmirdasilva/portfolio/main/banner.png" alt="VALMIR — desenvolvedor com IA no fluxo" width="100%" />
 
 <br><br>
 
