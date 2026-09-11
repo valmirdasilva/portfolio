@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Arquivo pesado — fora do deploy por enquanto (catálogo Faria Leather, 47MB)
+Catalogo-Faria-Leather-2026.pdf
+
+# repo do perfil do GitHub — vai em valmirdasilva/valmirdasilva, não aqui
+github-perfil/

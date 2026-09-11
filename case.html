@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case — Valmir da Silva</title>
+<meta name="description" content="Apresentação de um projeto reformulado por Valmir da Silva.">
+<meta name="theme-color" content="#0B0E0A">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Oswald:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#case">Pular para o conteúdo</a>
+
+<div class="palco" aria-hidden="true" style="background:radial-gradient(120% 80% at 70% 0%, #12180f 0%, #0B0E0A 60%)"></div>
+<div class="crt" aria-hidden="true"></div>
+<div class="vinheta" aria-hidden="true"></div>
+<svg class="grao" aria-hidden="true"><filter id="r"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(#r)"/></svg>
+
+<header class="case-topo">
+  <a class="hud-marca" href="index.html#topo">VS</a>
+  <a class="case-voltar" href="index.html#projetos">← Projetos</a>
+</header>
+
+<main class="case-wrap" id="case">
+  <p class="case-kicker" id="ck">Reformulação</p>
+  <div class="case-head">
+    <h1 id="ct">Projeto</h1>
+    <div class="case-meta" id="cm"></div>
+    <p class="case-lead" id="cl"></p>
+  </div>
+
+  <div class="case-layout">
+    <div class="moldura">
+      <div class="moldura-barra">
+        <span class="moldura-pontos"><i></i><i></i><i></i></span>
+        <span class="moldura-url" id="cu">apresentação · portfólio VS</span>
+        <span class="moldura-modos">
+          <button type="button" id="mDesk" class="on">DESKTOP</button>
+          <button type="button" id="mMob">MOBILE</button>
+        </span>
+      </div>
+      <div class="preview desk" id="pv">
+        <iframe id="fr" title="Pré-visualização do site" loading="lazy" referrerpolicy="no-referrer"></iframe>
+      </div>
+    </div>
+
+    <aside class="mudou">
+      <h2>O que foi feito</h2>
+      <ul id="cx"></ul>
+      <a class="abrir" id="co" target="_blank" rel="noopener">Abrir em tela cheia ↗</a>
+    </aside>
+  </div>
+
+  <nav class="case-nav" id="cn" aria-label="Outros projetos"></nav>
+</main>
+
+<script>
+(function () {
+  "use strict";
+  var P = {
+    carolina: {
+      nome: "Carolina Guaragna", pasta: "Carolina-Guaragna-main",
+      meta: ["Psicologia e psicanálise", "Porto Alegre / RS", "Concepção · layout · dev"],
+      lead: "Consultório de psicoterapia de orientação psicanalítica. A presença anterior não passava o tom de acolhimento nem deixava claro o caminho até o primeiro contato.",
+      mudou: [
+        "Identidade editorial e acolhedora — tipografia serifada, respiro e paleta suave.",
+        "Hero com proposta clara (\"Vamos conversar?\") e botão de WhatsApp direto.",
+        "Serviços e dúvidas frequentes reorganizados em blocos escaneáveis.",
+        "Foto de rosto com enquadramento em destaque, transmitindo proximidade.",
+        "SEO local: CRP, cidade e modalidades de atendimento bem sinalizados."
+      ]
+    },
+    cleo: {
+      nome: "Cleo Ribeiro", pasta: "cleo-ribeiro-main",
+      meta: ["Psicologia clínica", "Porto Alegre e online", "Concepção · layout · dev"],
+      lead: "Psicóloga que atende adultos e crianças, com foco em traumas de desenvolvimento. Precisava de um site que passasse calma e organizasse dois públicos diferentes sem confundir.",
+      mudou: [
+        "Tom terroso e sereno, com hero editorial \"um espaço seguro para acolher sua história\".",
+        "Seção infantil separada da de adultos, cada uma com sua linguagem.",
+        "Trilha \"como funciona\" explicando a jornada da primeira sessão.",
+        "Faixa de credenciais: CRP, anos de formação, duração das sessões.",
+        "Estrutura pronta para blog e agendamento como ação principal."
+      ]
+    },
+    daniela: {
+      nome: "Daniela Dalberto", pasta: "Daniela-dalberto-main",
+      meta: ["Advocacia — Família e Sucessões", "Porto Alegre / RS", "Concepção · layout · dev"],
+      lead: "Escritório com 18 anos de atuação. O site antigo não passava autoridade e deixava as áreas de atuação pouco legíveis.",
+      mudou: [
+        "Hero sóbrio com foto do escritório e recorte \"com ética e acolhimento\".",
+        "Áreas de atuação em grade — Família, Sucessões, Trabalhista, Previdenciário e mais.",
+        "Seção de missão e valores reforçando o posicionamento humano.",
+        "Botão \"Agendar consulta\" fixo no topo, sempre à mão.",
+        "Paleta marrom e dourada alinhada ao universo jurídico."
+      ]
+    },
+    formato: {
+      nome: "Formato Contábil", pasta: "formato-contabil-main",
+      meta: ["Contabilidade e consultoria", "Porto Alegre / RS · desde 2015", "Concepção · layout · dev"],
+      lead: "Escritório com mais de 250 empresas atendidas, mas um site que não mostrava prova social nem oferecia um caminho claro para a Área do Cliente.",
+      mudou: [
+        "Barra superior com telefone, e-mail e horário de atendimento.",
+        "Hero com a marca em card e o selo \"+250 empresas atendidas\".",
+        "Serviços organizados: MEI, certificado digital, IRPF e consultoria.",
+        "Ações separadas: \"Área do Cliente\" e \"Fale com um especialista\".",
+        "Identidade vinho da marca aplicada de ponta a ponta."
+      ]
+    },
+    buriti: {
+      nome: "Buriti Garden Premium", pasta: "buriti-garden-main",
+      meta: ["Lançamento imobiliário", "São Leopoldo / RS", "Concepção · layout · dev · curadoria da galeria"],
+      lead: "Loteamento de alto padrão às margens de um lago, com mais de 40 itens de lazer. O site precisava vender estilo de vida e capturar leads qualificados.",
+      mudou: [
+        "Hero cinematográfico com render do club house e carrossel de ambientes.",
+        "Galeria de lazer com 40+ ambientes, organizada e navegável.",
+        "Seção de localização situando o empreendimento na região.",
+        "Formulário \"Cadastre-se\" como conversão central da página.",
+        "Tipografia serifada premium com o verde-lago da marca."
+      ]
+    },
+    dalri: {
+      nome: "Dal Ri Negócios Imobiliários", externo: true, kicker: "Projeto em andamento",
+      url: "https://dalrinegociosimobiliarios.com.br/", img: "assets/projetos/dalri.jpg",
+      meta: ["Imobiliária de alto padrão", "Novo Hamburgo / RS", "Site · CRM Loft · tráfego pago"],
+      lead: "Imobiliária com mais de 15 anos no mercado de alto padrão de Novo Hamburgo. Refiz o site inteiro, integrei o CRM Loft e cuido do tráfego pago — trabalho em andamento.",
+      mudou: [
+        "Site reconstruído do zero, com busca de imóveis por tipo, empreendimento, localização e valor.",
+        "Integração com o CRM Loft: os imóveis e leads fluem direto para o sistema da imobiliária.",
+        "Páginas de imóvel e de empreendimento padronizadas, alimentadas pelo CRM.",
+        "Identidade de marca aplicada — tom sóbrio e imponente, coerente com o alto padrão.",
+        "Gestão de tráfego pago (Meta e Google) apontando para os imóveis e a captação."
+      ]
+    }
+  };
+  var ordem = ["carolina", "cleo", "daniela", "formato", "buriti", "dalri"];
+
+  var slug = (new URLSearchParams(location.search).get("p") || "carolina").toLowerCase();
+  if (!P[slug]) slug = "carolina";
+  var d = P[slug];
+
+  document.title = d.nome + " — case · Valmir da Silva";
+  document.getElementById("ck").textContent = d.kicker || "Reformulação";
+  document.getElementById("ct").textContent = d.nome;
+  document.getElementById("cl").textContent = d.lead;
+  document.getElementById("cm").innerHTML = d.meta.map(function (m, i) {
+    return (i === 0 ? "<b>" + m + "</b>" : "<span>" + m + "</span>");
+  }).join("");
+  document.getElementById("cx").innerHTML = d.mudou.map(function (m) { return "<li>" + m + "</li>"; }).join("");
+
+  var pv = document.getElementById("pv");
+  var co = document.getElementById("co");
+  var modos = document.querySelector(".moldura-modos");
+  var url = document.getElementById("cu");
+
+  if (d.externo) {
+    // site no ar em outro domínio — mostra print + link, sem iframe
+    url.textContent = d.url.replace(/^https?:\/\//, "").replace(/\/$/, "");
+    modos.hidden = true;
+    pv.classList.add("externo");
+    pv.innerHTML = '<img src="' + d.img + '" alt="Site de ' + d.nome + '">';
+    co.href = d.url;
+    co.textContent = "Abrir o site no ar ↗";
+  } else {
+    var alvo = d.pasta + "/index.html";
+    document.getElementById("fr").src = alvo;
+    co.href = alvo;
+
+    var bD = document.getElementById("mDesk"), bM = document.getElementById("mMob");
+    function modo(mob) {
+      pv.classList.toggle("mob", mob);
+      pv.classList.toggle("desk", !mob);
+      bM.classList.toggle("on", mob);
+      bD.classList.toggle("on", !mob);
+    }
+    bD.addEventListener("click", function () { modo(false); });
+    bM.addEventListener("click", function () { modo(true); });
+  }
+
+  // navegação prev / next
+  var i = ordem.indexOf(slug);
+  var prev = ordem[(i - 1 + ordem.length) % ordem.length];
+  var next = ordem[(i + 1) % ordem.length];
+  document.getElementById("cn").innerHTML =
+    '<a rel="prev" href="case.html?p=' + prev + '"><span>Anterior</span>' + P[prev].nome + '</a>' +
+    '<a rel="next" href="case.html?p=' + next + '"><span>Próximo</span>' + P[next].nome + '</a>';
+})();
+</script>
+</body>
+</html>

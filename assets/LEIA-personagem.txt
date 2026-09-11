@@ -1,0 +1,26 @@
+SPRITE DO PERSONAGEM
+====================
+
+ATIVO: assets/personagem.png
+Tira horizontal de 5 quadros 64x64 (fundo transparente, virado p/ direita):
+  quadro 0-3 = ciclo de caminhada
+  quadro 4   = pose final (comemoracao)
+
+Origem: pack "Dark Mage" 64x64 (pinogames, itch.io) — quadros Walk/walk_01..04
++ Attack/attack_04 como pose final.
+
+TROCAR O SPRITE
+---------------
+1. Junte os quadros numa unica imagem, lado a lado (frame0 | frame1 | ...).
+   4 primeiros = caminhada, ultimo = comemoracao. Todos 64x64, transparente,
+   virado para a DIREITA.
+2. Salve por cima de assets/personagem.png
+O site detecta e usa automaticamente. Se sumir o arquivo, volta pro desenho
+por codigo (silhueta simples).
+
+AJUSTES (js/main.js, funcao personagem)
+--------------------------------------
+  dh = u * 32     -> altura na tela (aumentar = maior)
+  py + u * 4 - dh -> encosto no chao (aumentar o "4" = desce)
+
+Paleta do site: fundo escuro, verde #A6C22E e ciano #4C9C93 como luzes.

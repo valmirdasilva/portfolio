@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valmir da Silva — desenvolvedor e designer</title>
+<meta name="description" content="Desenvolvimento e design para a presença digital do seu negócio: sites, lojas virtuais, sistemas, identidade visual, tráfego pago e vídeo.">
+<meta name="theme-color" content="#0B0E0A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Oswald:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- Mundo (canvas de fundo dirigido pelo scroll) -->
+<div class="palco"><canvas id="mundo" aria-hidden="true"></canvas></div>
+<div class="crt" aria-hidden="true"></div>
+<div class="vinheta" aria-hidden="true"></div>
+<svg class="grao" aria-hidden="true"><filter id="r"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(#r)"/></svg>
+
+<!-- HUD -->
+<div class="hud">
+  <a class="hud-marca" href="#topo">VS</a>
+  <div class="hud-barra" role="progressbar" aria-label="Progresso"><span id="hudFill"></span></div>
+  <span class="hud-dist" id="hudDist">0m</span>
+  <button class="hud-mapa" id="hudMapa" aria-expanded="false" aria-controls="mapa">MAPA</button>
+</div>
+<nav class="mapa" id="mapa" aria-label="Ir para">
+  <a href="#topo">Início</a>
+  <a href="#fazer">01 · Serviços</a>
+  <a href="#skills">02 · Skills</a>
+  <a href="#metodo">03 · Método</a>
+  <a href="#projetos">04 · Projetos</a>
+  <a href="#contato">05 · Contato</a>
+</nav>
+
+<main id="conteudo">
+
+  <!-- ===== Hero ===== -->
+  <section class="cena hero" id="topo">
+    <div class="painel painel-hero">
+      <div class="hero-esq">
+        <p class="eyebrow">Valmir da Silva — desenvolvedor e designer</p>
+        <h1 class="hero-marca">
+          <span class="glitch" data-txt="DEVELOPER">DEVELOPER</span>
+          <span class="hero-marca-b">DESIGNER</span>
+        </h1>
+        <p class="frase">Presença digital do seu negócio, do briefing ao ar.</p>
+      </div>
+      <div class="hero-dir">
+        <p class="sub">Sites, sistemas, lojas virtuais, tráfego pago e vídeo — com o desenvolvimento e o design na mesma mão.</p>
+        <div class="acoes">
+          <a class="btn" href="https://wa.me/5551992017588?text=Ol%C3%A1%20Valmir%2C%20vim%20pelo%20seu%20portf%C3%B3lio." target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a class="btn btn-fantasma" href="#projetos">Ver projetos</a>
+        </div>
+        <dl class="hero-cred">
+          <div><dt>Base</dt><dd>Novo Hamburgo / RS — presencial e remoto</dd></div>
+          <div><dt>No ar</dt><dd>6 negócios com a presença digital no ar</dd></div>
+          <div><dt>Escopo</dt><dd>site, tráfego, design e vídeo sem trocar de fornecedor</dd></div>
+        </dl>
+      </div>
+    </div>
+    <p class="dica" id="dica">↓ role para andar pela cidade</p>
+  </section>
+
+  <!-- ===== Monte o seu projeto ===== -->
+  <section class="cena" id="montar">
+    <div class="painel">
+      <p class="parada">PARADA · CONFIGURADOR</p>
+      <p class="escopo-titulo">Monte o seu projeto</p>
+      <div class="escopo-chips" role="group" aria-label="Escopo do projeto">
+        <button class="chip" data-label="um site" aria-pressed="false">Site</button>
+        <button class="chip" data-label="um sistema sob medida" aria-pressed="false">Sistema</button>
+        <button class="chip" data-label="uma loja virtual" aria-pressed="false">Loja virtual</button>
+        <button class="chip" data-label="tráfego pago" aria-pressed="false">Tráfego pago</button>
+        <button class="chip" data-label="identidade visual" aria-pressed="false">Identidade</button>
+        <button class="chip" data-label="edição de vídeo" aria-pressed="false">Vídeo</button>
+      </div>
+      <p class="escopo-frase" id="escopo-frase" aria-live="polite">Escolha o que precisa e eu te mostro como vira um projeto só.</p>
+    </div>
+  </section>
+
+  <!-- ===== Serviços ===== -->
+  <section class="cena" id="fazer" aria-labelledby="fazer-t">
+    <div class="painel painel-largo">
+      <p class="parada">01 · SERVIÇOS</p>
+      <h2 id="fazer-t" class="glitch" data-txt="Serviços">Serviços</h2>
+      <p class="sub">Seis frentes que normalmente vivem em fornecedores diferentes. Aqui é a mesma pessoa tocando todas.</p>
+      <div class="grade">
+        <article class="cartao"><span class="cartao-n">01</span><h3>Sites e sistemas</h3><p>Sites, landing pages e sistemas sob medida. Desenvolvimento acelerado por IA com revisão minha linha a linha.</p></article>
+        <article class="cartao"><span class="cartao-n">02</span><h3>Lojas virtuais e WordPress</h3><p>E-commerce do catálogo ao checkout, com pagamento integrado e um painel que você opera sozinho.</p></article>
+        <article class="cartao"><span class="cartao-n">03</span><h3>Tráfego pago</h3><p>Meta Ads e Google Ads: estrutura de conta, públicos, criativos e acompanhamento de resultado.</p></article>
+        <article class="cartao"><span class="cartao-n">04</span><h3>Design — digital e impresso</h3><p>Identidade visual, peças para redes e material impresso. Photoshop e Canva, alinhados à marca.</p></article>
+        <article class="cartao"><span class="cartao-n">05</span><h3>Edição de vídeo</h3><p>Cortes e edição para redes e apresentações. Captação de imagens em solo quando o projeto pede.</p></article>
+        <article class="cartao"><span class="cartao-n">06</span><h3>Integração e CRM</h3><p>Site, formulários, CRM e IA conectados — o atendimento deixa de depender de digitação manual.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section class="cena" id="skills" aria-labelledby="skills-t">
+    <div class="painel painel-largo">
+      <p class="parada">02 · SKILLS</p>
+      <h2 id="skills-t" class="glitch" data-txt="Skills">Skills</h2>
+      <p class="sub">O que eu domino hoje, do código ao anúncio. IA acelera o trabalho pesado; a curadoria e a decisão são minhas.</p>
+
+      <div class="ticker" role="marquee" aria-label="Stack de ferramentas">
+        <div class="ticker-trilha" aria-hidden="true">
+          <span>Claude</span><span>DeepSeek</span><span>Codex</span><span>Antigravity</span><span>VS Code</span><span>GitHub</span><span>Meta Ads</span><span>Google Ads</span><span>WordPress</span><span>Photoshop</span><span>Canva</span><span>CapCut</span><span>APIs</span><span>CRM</span>
+          <span>Claude</span><span>DeepSeek</span><span>Codex</span><span>Antigravity</span><span>VS Code</span><span>GitHub</span><span>Meta Ads</span><span>Google Ads</span><span>WordPress</span><span>Photoshop</span><span>Canva</span><span>CapCut</span><span>APIs</span><span>CRM</span>
+        </div>
+      </div>
+
+      <div class="skills-grade">
+        <div class="skill-grupo">
+          <h3>IA aplicada &amp; desenvolvimento</h3>
+          <span class="grupo-n">// núcleo</span>
+          <ul class="skill-lista">
+            <li><span>IA no fluxo de trabalho (VS Code + Claude, DeepSeek, skills)</span><span class="nivel" aria-label="domínio"><i class="on"></i><i class="on"></i><i class="on"></i></span></li>
+            <li><span>Integração de APIs com IA</span><span class="nivel" aria-label="domínio"><i class="on"></i><i class="on"></i><i class="on"></i></span></li>
+            <li><span>Projetos versionados no GitHub</span><span class="nivel" aria-label="domínio"><i class="on"></i><i class="on"></i><i class="on"></i></span></li>
+            <li><span>HTML, CSS e JavaScript (curadoria e ajuste de código)</span><span class="nivel" aria-label="sólido"><i class="on"></i><i class="on"></i><i></i></span></li>
+            <li><span>Lógica de programação e leitura de código</span><span class="nivel" aria-label="sólido"><i class="on"></i><i class="on"></i><i></i></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-grupo">
+          <h3>Sites, e-commerce &amp; CMS</h3>
+          <span class="grupo-n">// entrega</span>
+          <ul class="skill-lista">
+            <li><span>Sites e landing pages sob medida</span><span class="nivel" aria-label="sólido"><i class="on"></i><i class="on"></i><i></i></span></li>
+            <li><span>WordPress</span><span class="nivel" aria-label="sólido"><i class="on"></i><i class="on"></i><i></i></span></li>
+            <li><span>Desenvolvimento de e-commerce (catálogo ao checkout)</span><span class="nivel" aria-label="sólido"><i class="on"></i><i class="on"></i><i></i></span></li>
+            <li><span>Banco de dados</span><span class="nivel" aria-label="em evolução"><i class="on"></i><i></i><i></i></span></li>
+            <li><span>Deploy e domínio (GitHub Pages, hospedagem)</span><span class="nivel" aria-label="sólido"><i class="on"></i><i class="on"></i><i></i></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-grupo">
+          <h3>Tráfego pago &amp; resultado</h3>
+          <span class="grupo-n">// aquisição</span>
+          <ul class="skill-lista">
+            <li><span>Meta Ads — estrutura, públicos, criativos</span><span class="nivel" aria-label="domínio"><i class="on"></i><i class="on"></i><i class="on"></i></span></li>
+            <li><span>Google Ads — pesquisa, display e campanhas</span><span class="nivel" aria-label="domínio"><i class="on"></i><i class="on"></i><i class="on"></i></span></li>
+            <li><span>Leitura de métricas e otimização</span><span class="nivel" aria-label="sólido"><i class="on"></i><i class="on"></i><i></i></span></li>
+            <li><span>Pixel, eventos e conversões</span><span class="nivel" aria-label="sólido"><i class="on"></i><i class="on"></i><i></i></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-grupo">
+          <h3>Design — digital &amp; impresso</h3>
+          <span class="grupo-n">// marca</span>
+          <ul class="skill-lista">
+            <li><span>Identidade visual e sistema de marca</span><span class="nivel" aria-label="sólido"><i class="on"></i><i class="on"></i><i></i></span></li>
+            <li><span>Peças para redes e material impresso</span><span class="nivel" aria-label="sólido"><i class="on"></i><i class="on"></i><i></i></span></li>
+            <li><span>Photoshop</span><span class="nivel" aria-label="médio"><i class="on"></i><i class="on"></i><i></i></span></li>
+            <li><span>Canva</span><span class="nivel" aria-label="domínio"><i class="on"></i><i class="on"></i><i class="on"></i></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-grupo">
+          <h3>Vídeo &amp; captação</h3>
+          <span class="grupo-n">// conteúdo</span>
+          <ul class="skill-lista">
+            <li><span>Edição para redes e apresentações (CapCut)</span><span class="nivel" aria-label="em evolução"><i class="on"></i><i></i><i></i></span></li>
+            <li><span>Captação de imagens em solo</span><span class="nivel" aria-label="em evolução"><i class="on"></i><i></i><i></i></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-grupo">
+          <h3>Integração, CRM &amp; atendimento</h3>
+          <span class="grupo-n">// operação</span>
+          <ul class="skill-lista">
+            <li><span>CRM e automação de atendimento</span><span class="nivel" aria-label="sólido"><i class="on"></i><i class="on"></i><i></i></span></li>
+            <li><span>Formulários e fluxos conectados a IA</span><span class="nivel" aria-label="sólido"><i class="on"></i><i class="on"></i><i></i></span></li>
+            <li><span>Briefing, negociação e tradução da necessidade em projeto</span><span class="nivel" aria-label="domínio"><i class="on"></i><i class="on"></i><i class="on"></i></span></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="skills-legenda"><b>▮▮▮</b> domínio &nbsp;·&nbsp; <b>▮▮</b> sólido &nbsp;·&nbsp; <b>▮</b> em evolução</p>
+
+      <div class="cv-strip">
+        <div><b>Base</b>Novo Hamburgo / RS — presencial e remoto</div>
+        <div><b>Formato</b>Freelancer · aberto a vagas</div>
+        <div><b>Idiomas</b>Português nativo · inglês básico</div>
+        <div><b>Mentalidade</b>Generalista — não me limito a aprender ferramenta nova</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Método ===== -->
+  <section class="cena" id="metodo" aria-labelledby="met-t">
+    <div class="painel painel-largo">
+      <p class="parada">03 · MÉTODO</p>
+      <h2 id="met-t" class="glitch" data-txt="Método">Método</h2>
+      <p class="sub">IA como ferramenta, nunca como piloto automático. A máquina acelera o trabalho pesado; a curadoria e a decisão do que fica são minhas.</p>
+      <ol class="passos">
+        <li class="passo"><span class="passo-n">01</span><h3>Conversa</h3><p>Entendo o que o negócio precisa, o público e o orçamento. Saio com uma proposta de projeto inteiro.</p></li>
+        <li class="passo"><span class="passo-n">02</span><h3>Construção</h3><p>Site, sistema, artes e campanhas tomam forma. Você acompanha e ajusta enquanto dá tempo.</p></li>
+        <li class="passo"><span class="passo-n">03</span><h3>No ar</h3><p>Lançamento, divulgação e acompanhamento. Você fica com um painel que consegue operar.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== Projetos ===== -->
+  <section class="cena" id="projetos" aria-labelledby="proj-t">
+    <div class="painel painel-largo">
+      <p class="parada">04 · PROJETOS</p>
+      <h2 id="proj-t" class="glitch" data-txt="Projetos">Projetos</h2>
+      <p class="sub">Negócios reais que passaram por mim — do site novo à integração de CRM e ao tráfego pago. Clique para ver a apresentação de cada um.</p>
+      <div class="projetos" id="projetos-lista">
+        <a class="projeto" href="case.html?p=carolina">
+          <div class="projeto-img"><img src="assets/projetos/carolina.jpg" alt="Site reformulado de Carolina Guaragna" loading="lazy" width="900" height="562"></div>
+          <div class="projeto-corpo">
+            <span class="selo">Reformulação</span>
+            <h3>Carolina Guaragna</h3>
+            <p>Consultório de psicologia e psicanálise em Porto Alegre. Site editorial e acolhedor, com caminho direto até o agendamento.</p>
+            <span class="projeto-ver">ver apresentação →</span>
+          </div>
+        </a>
+        <a class="projeto" href="case.html?p=cleo">
+          <div class="projeto-img"><img src="assets/projetos/cleo.jpg" alt="Site reformulado de Cleo Ribeiro" loading="lazy" width="900" height="562"></div>
+          <div class="projeto-corpo">
+            <span class="selo">Reformulação</span>
+            <h3>Cleo Ribeiro</h3>
+            <p>Psicóloga clínica — adultos e crianças. Tom terroso e calmo, seção infantil dedicada e trilha "como funciona".</p>
+            <span class="projeto-ver">ver apresentação →</span>
+          </div>
+        </a>
+        <a class="projeto" href="case.html?p=daniela">
+          <div class="projeto-img"><img src="assets/projetos/daniela.jpg" alt="Site reformulado de Daniela Dalberto" loading="lazy" width="900" height="562"></div>
+          <div class="projeto-corpo">
+            <span class="selo">Reformulação</span>
+            <h3>Daniela Dalberto</h3>
+            <p>Advocacia de Família, Sucessões e Trabalhista. Tom de autoridade, áreas de atuação escaneáveis e agendamento fixo.</p>
+            <span class="projeto-ver">ver apresentação →</span>
+          </div>
+        </a>
+        <a class="projeto" href="case.html?p=formato">
+          <div class="projeto-img"><img src="assets/projetos/formato.jpg" alt="Site reformulado da Formato Contábil" loading="lazy" width="900" height="562"></div>
+          <div class="projeto-corpo">
+            <span class="selo">Reformulação</span>
+            <h3>Formato Contábil</h3>
+            <p>Contabilidade em Porto Alegre desde 2015. Prova social em destaque, serviços organizados e acesso à Área do Cliente.</p>
+            <span class="projeto-ver">ver apresentação →</span>
+          </div>
+        </a>
+        <a class="projeto" href="case.html?p=buriti">
+          <div class="projeto-img"><img src="assets/projetos/buriti.jpg" alt="Site reformulado do Residencial Buriti Garden Premium" loading="lazy" width="900" height="562"></div>
+          <div class="projeto-corpo">
+            <span class="selo">Reformulação</span>
+            <h3>Buriti Garden Premium</h3>
+            <p>Loteamento de alto padrão em São Leopoldo/RS. Hero cinematográfico, galeria de 40+ ambientes e captação de leads.</p>
+            <span class="projeto-ver">ver apresentação →</span>
+          </div>
+        </a>
+        <a class="projeto" href="case.html?p=dalri">
+          <div class="projeto-img"><img src="assets/projetos/dalri.jpg" alt="Site da Dal Ri Negócios Imobiliários" loading="lazy" width="900" height="562"></div>
+          <div class="projeto-corpo">
+            <span class="selo">Site · CRM · tráfego</span>
+            <h3>Dal Ri Negócios Imobiliários</h3>
+            <p>Imobiliária de alto padrão em Novo Hamburgo. Site refeito do zero, integração com o CRM Loft e gestão de tráfego pago.</p>
+            <span class="projeto-ver">ver apresentação →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contato ===== -->
+  <section class="cena" id="contato" aria-labelledby="cont-t">
+    <div class="painel painel-fim">
+      <p class="parada">05 · FIM DA LINHA</p>
+      <h2 id="cont-t" class="glitch" data-txt="Chegou?">Chegou?</h2>
+      <p class="sub">Me conta o que o seu negócio precisa. Retorno com uma ideia do projeto completo, sem compromisso.</p>
+      <div class="acoes">
+        <a class="btn" href="https://wa.me/5551992017588?text=Ol%C3%A1%20Valmir%2C%20vim%20pelo%20seu%20portf%C3%B3lio." target="_blank" rel="noopener">Falar no WhatsApp</a>
+        <a class="btn btn-fantasma" href="mailto:valmirdasilva1999@gmail.com">valmirdasilva1999@gmail.com</a>
+      </div>
+      <ul class="redes">
+        <li><a href="https://www.linkedin.com/in/valmir-da-silva-da-silveira-80139428b/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/valmirdasilva" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <span>VS</span><span>Valmir da Silva da Silveira · atendimento presencial e remoto</span><span id="ano"></span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
