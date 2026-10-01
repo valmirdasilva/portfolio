@@ -1,0 +1,232 @@
+/* ============================================================
+   Valmir da Silva — layout claro, direto
+   Usado por index.html (portfólio) e cliente.html (proposta)
+   ============================================================ */
+
+:root{
+  /* paleta "Lush forest" */
+  --bg: #F6FBF3;
+  --panel: #FFFFFF;
+  --ink: #253D2C;            /* verde bem escuro — texto e títulos */
+  --muted: #52634F;
+  --muted-2: #7C8A79;
+  --line: #DCEBDD;
+  --accent: #2E6F40;         /* verde floresta — links, eyebrows, bordas */
+  --accent-soft: #CFFFDC;    /* verde menta — chips, fundo suave */
+  --accent-bright: #68BA7F;  /* verde médio — hover, indicadores */
+  --action: #253D2C;         /* verde bem escuro — só a ação principal */
+  --action-ink: #F2FBF4;
+
+  --f-display: "Oswald", "Arial Narrow", sans-serif;
+  --f-body: "Work Sans", system-ui, sans-serif;
+
+  --wrap: 1120px;
+  --pad: clamp(1.25rem, 4vw, 3rem);
+  --r: 10px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.08rem);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 { font-family: var(--f-display); font-weight: 700; text-transform: uppercase; letter-spacing: 0.01em; line-height: 1.08; color: var(--ink); }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
+img, svg { display: block; max-width: 100%; }
+ul, ol { list-style: none; }
+
+.skip { position: fixed; left: -9999px; top: 0; z-index: 100; background: var(--accent); color: #fff; padding: 0.6rem 1rem; }
+.skip:focus { left: 0; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--pad); }
+
+/* ---------------- topo ---------------- */
+
+.topo {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; gap: 1.4rem;
+  padding: 1rem var(--pad);
+  background: rgba(247, 248, 243, 0.88);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--line);
+}
+.marca { font-family: var(--f-display); font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; font-size: 1.05rem; }
+.nav { display: none; gap: 1.6rem; margin: 0 auto 0 2rem; font-size: 0.95rem; }
+.nav a:hover { color: var(--accent); }
+.topo .btn { margin-left: auto; padding: 0.7rem 1.1rem; font-size: 0.85rem; }
+.nav-toggle { display: inline-flex; margin-left: 0.5rem; font-size: 1.4rem; line-height: 1; }
+.btn-txt-full { display: none; }
+
+@media (min-width: 420px) {
+  .btn-txt-full { display: inline; }
+}
+@media (min-width: 640px) {
+  .topo .btn { padding: 0.8rem 1.4rem; font-size: 0.92rem; }
+}
+@media (min-width: 860px) {
+  .nav { display: flex; }
+  .nav-toggle { display: none; }
+}
+@media (max-width: 420px) {
+  .marca { font-size: 0.92rem; }
+}
+
+.nav-movel {
+  display: none; flex-direction: column; gap: 0.2rem;
+  position: fixed; inset: 56px 0 auto 0; z-index: 39;
+  background: var(--panel); border-bottom: 1px solid var(--line);
+  padding: 0.6rem var(--pad) 1.2rem;
+}
+.nav-movel.aberto { display: flex; }
+.nav-movel a { padding: 0.7rem 0; border-bottom: 1px solid var(--line); font-size: 1.02rem; }
+.nav-movel a:last-child { border-bottom: none; }
+
+/* ---------------- botões ---------------- */
+
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-family: var(--f-display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.02em;
+  font-size: 0.92rem; padding: 0.8rem 1.4rem; border-radius: var(--r);
+  border: 1.5px solid transparent;
+}
+.btn-primario { background: var(--action); color: var(--action-ink); }
+.btn-primario:hover { background: var(--accent); }
+.btn-fantasma { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn-fantasma:hover { border-color: var(--ink); }
+.btn-verde { background: var(--accent-bright); color: var(--ink); } /* botão claro — pra usar sobre fundo escuro */
+.btn-verde:hover { background: #57a670; }
+
+/* ---------------- hero ---------------- */
+
+.hero { padding: clamp(3.5rem, 9vw, 7rem) var(--pad) clamp(2.5rem, 6vw, 4rem); max-width: var(--wrap); margin: 0 auto; }
+.kicker { font-family: var(--f-display); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.82rem; color: var(--accent); margin-bottom: 1.1rem; }
+.hero h1 { font-size: clamp(2.1rem, 5.4vw, 3.6rem); max-width: 16ch; margin-bottom: 1.3rem; }
+.hero .lead { color: var(--muted); max-width: 56ch; font-size: clamp(1.02rem, 1.4vw, 1.18rem); margin-bottom: 2rem; }
+.hero .acoes { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-bottom: 2.6rem; }
+
+.fatos { display: flex; flex-wrap: wrap; gap: 0.6rem 2.2rem; padding-top: 1.6rem; border-top: 1px solid var(--line); }
+.fatos li { font-size: 0.92rem; color: var(--muted); }
+.fatos strong { color: var(--ink); font-family: var(--f-display); font-size: 1.1rem; margin-right: 0.35rem; }
+
+/* ---------------- seções ---------------- */
+
+.secao { padding: clamp(3rem, 7vw, 5.5rem) var(--pad); max-width: var(--wrap); margin: 0 auto; }
+.secao-cabecalho { max-width: 60ch; margin-bottom: 2.6rem; }
+.eyebrow { font-family: var(--f-display); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.8rem; color: var(--accent); margin-bottom: 0.8rem; }
+.secao h2 { font-size: clamp(1.7rem, 3.6vw, 2.5rem); margin-bottom: 0.8rem; }
+.secao .sub { color: var(--muted); }
+.secao-alt { background: var(--panel); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+/* ---------------- serviços ---------------- */
+
+.servicos-grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.1rem; }
+.servico { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 1.5rem; border-left: 3px solid var(--accent); }
+.servico h3 { font-size: 1.1rem; text-transform: none; margin-bottom: 0.5rem; }
+.servico p { color: var(--muted); font-size: 0.95rem; }
+
+/* ---------------- configurador ---------------- */
+
+.escopo { background: var(--accent-soft); border: 1px solid var(--line); border-radius: var(--r); padding: clamp(1.4rem, 3vw, 2.2rem); }
+.escopo-titulo { font-family: var(--f-display); font-weight: 700; text-transform: uppercase; font-size: 1.15rem; margin-bottom: 1rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.1rem; }
+.chip {
+  font-family: var(--f-body); font-weight: 500; font-size: 0.9rem;
+  padding: 0.5rem 1rem; border-radius: 999px; border: 1px solid var(--line); background: var(--panel);
+}
+.chip:hover { border-color: var(--accent); }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.escopo-frase { color: var(--muted); min-height: 2.6em; }
+.escopo-frase strong { color: var(--accent); }
+
+/* ---------------- skills ---------------- */
+
+.skills-destaque { margin-bottom: 2.6rem; }
+.skills-label { font-family: var(--f-display); text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.8rem; color: var(--accent); margin-bottom: 0.9rem; }
+.tags { display: flex; flex-wrap: wrap; gap: 0.55rem; }
+.tags span {
+  font-size: 0.88rem; font-weight: 500; color: var(--muted);
+  padding: 0.45rem 0.9rem; border-radius: 999px; border: 1px solid var(--line); background: var(--panel);
+}
+.tags-solido span { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+
+.skills-grupos { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.8rem 2rem; }
+.skills-grupo h3 { font-family: var(--f-display); font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink); margin-bottom: 0.9rem; }
+
+.cv-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1.2rem; margin-top: 2.4rem; padding-top: 1.6rem; border-top: 1px solid var(--line); }
+.cv-strip b { display: block; font-family: var(--f-display); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.3rem; }
+
+/* ---------------- método ---------------- */
+
+.passos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.8rem; }
+.passo { border-top: 3px solid var(--accent); padding-top: 1.2rem; }
+.passo-n { font-family: var(--f-display); font-size: 0.85rem; color: var(--accent); display: block; margin-bottom: 0.6rem; }
+.passo h3 { font-size: 1.15rem; margin-bottom: 0.4rem; }
+.passo p { color: var(--muted); font-size: 0.95rem; }
+
+@media (max-width: 760px) { .passos { grid-template-columns: 1fr; } }
+
+/* ---------------- projetos ---------------- */
+
+.projetos-grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.3rem; }
+.projeto {
+  display: flex; flex-direction: column;
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.projeto:hover { border-color: var(--accent); transform: translateY(-2px); }
+.projeto-img { aspect-ratio: 16/10; overflow: hidden; background: var(--bg); border-bottom: 1px solid var(--line); }
+.projeto-img img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.projeto-corpo { padding: 1.1rem 1.2rem 1.3rem; display: flex; flex-direction: column; flex: 1; }
+.selo { align-self: flex-start; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); background: var(--accent-soft); padding: 0.25rem 0.6rem; border-radius: 999px; margin-bottom: 0.7rem; }
+.projeto h3 { font-size: 1.05rem; text-transform: none; margin-bottom: 0.35rem; }
+.projeto p { color: var(--muted); font-size: 0.92rem; flex: 1; }
+.projeto-ver { font-size: 0.86rem; font-weight: 600; color: var(--accent); margin-top: 0.9rem; }
+
+/* ---------------- contato / cta final ---------------- */
+
+.cta-final { background: var(--ink); color: #fff; border-radius: var(--r); padding: clamp(2rem, 5vw, 3.2rem); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.6rem; }
+.cta-final h2 { color: #fff; font-size: clamp(1.5rem, 3vw, 2.1rem); max-width: 22ch; }
+.cta-final p { color: #AFC9B3; max-width: 42ch; margin-top: 0.6rem; }
+.cta-final .acoes { display: flex; flex-wrap: wrap; gap: 0.9rem; }
+.cta-final .btn-fantasma { color: #fff; border-color: rgba(255,255,255,0.25); }
+.cta-final .btn-fantasma:hover { border-color: #fff; }
+
+.redes { display: flex; gap: 1.4rem; margin-top: 1.4rem; font-size: 0.9rem; }
+.redes a { border-bottom: 1px solid rgba(255,255,255,0.25); padding-bottom: 2px; }
+.redes a:hover { border-color: var(--accent-bright); color: var(--accent-bright); }
+
+/* ---------------- rodapé ---------------- */
+
+.rodape {
+  border-top: 1px solid var(--line);
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.8rem;
+  padding: 1.8rem var(--pad); font-size: 0.85rem; color: var(--muted-2);
+  max-width: var(--wrap); margin: 0 auto;
+}
+.rodape span:first-child { font-family: var(--f-display); color: var(--ink); }
+
+/* ---------------- reveal ---------------- */
+
+.surge { opacity: 0; transform: translateY(14px); transition: opacity 0.5s ease, transform 0.5s ease; }
+.surge.dentro { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .surge { opacity: 1; transform: none; } }
+
+/* ---------------- faixa de provas (cliente.html) ---------------- */
+
+.provas { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.1rem; }
+.prova-link { display: block; font-size: 0.92rem; font-weight: 600; color: var(--accent); margin-top: 1.4rem; }
+
+.resolve-grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.2rem; }
+.resolve { padding-left: 1rem; border-left: 3px solid var(--accent); }
+.resolve h3 { font-size: 1.02rem; text-transform: none; margin-bottom: 0.4rem; }
+.resolve p { color: var(--muted); font-size: 0.94rem; }
